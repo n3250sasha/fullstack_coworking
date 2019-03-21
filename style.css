@@ -1,0 +1,271 @@
+body {
+    margin: 0;
+    background-image: url("assets/images/bg_light.png");
+    background-repeat: repeat;
+}
+
+header {
+    background-color: black;
+    padding: 0 20px;
+}
+
+header:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+header .logo {
+    float: left;
+}
+
+header .logo img {
+    margin: 10px;
+    height: 87px;
+    width: auto;
+}
+
+header .language {
+    float: right;
+    padding: 37px 0;
+    color: white;
+}
+
+/*Текс возле картиник смены язика "ENG"*/
+header .language > span {
+    vertical-align: middle; /* вертикальное выравнивание */
+    font-size: 12px;
+}
+
+/* Картинка сменни язика в хедере*/
+header .language img {
+    height: 20px;
+    width: auto;
+    vertical-align: middle;
+}
+
+/* ******************* МЕНЮ в хедере навигация  ******************** */
+.navigation {
+    color: white;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0 0 10px 0;
+    width: 100%;
+}
+
+.navigation li {
+    list-style-type: none;
+    float: left;
+    padding: 0;
+    border-right: 2px solid white;
+    width: 11%;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    /* box-sizing: border-box; Применяется для изменения алгоритма расчета ширины и высоты элемента.
+    Согласно спецификации CSS ширина блока складывается из ширины контента (width),
+    значений отступов (margin), полей (padding) и границ (border).
+    Аналогично обстоит и с высотой блока. Свойство box-sizing позволяет изменить
+    этот алгоритм, чтобы свойства width и height задавали размеры не контента,
+    а размеры блока. */
+}
+
+/* псевдоклас last-child работает с последние объектом*/
+.navigation li:last-child {
+    border-right: none;
+}
+
+/* Отступ блока после логотипа */
+.navigation ul:before {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+/* Отступ блока после меню */
+.navigation a {
+    color: white;
+}
+
+.navigation ul:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.navigation a:link {
+    color: white;
+    text-decoration: none; /* Убирает подчеркивание для ссылок */
+}
+
+.navigation a:hover {
+    border-bottom: 3px solid red;
+    color: red;
+}
+
+.navigation a:active {
+    border-bottom: 3px solid red;
+    color: white;
+}
+
+.navigation a:visited {
+    text-decoration: none;
+}
+
+/* **************** Слайдер **************************/
+.slider {
+    position: relative;
+}
+
+.left_arrow {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    vertical-align: middle;
+    background-color: white;
+    border-radius: 50%;
+    top: 320px;
+    left: 20px;
+}
+
+.right_arrow {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    vertical-align: middle;
+    background-color: white;
+    border-radius: 50%;
+    top: 320px;
+    right: 20px;
+}
+
+/* ******************* Контент ************************** */
+.content .content_text {
+    width: 60%;
+    background: white;
+    font-size: 16px;
+    margin: 20px auto 40px auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.7)
+}
+
+.content .content_text p {
+    margin: 0;
+    text-align: justify;
+}
+
+/* ********************* Футер ***************************** */
+.footer {
+    position: relative;
+    background-color: black;
+    padding: 0 20px;
+    margin-top: 20px;
+    height: 170px;
+    bottom: 0;
+}
+
+.footer span {
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    width: 550px;
+    color: white;
+    float: right;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 85px;
+}
+
+footer .footer_logo {
+    position: absolute;
+    top: 9px;
+    left: 10px;
+}
+
+footer .footer_logo img {
+    margin-top: 15%;
+    height: 87px;
+    width: auto;
+}
+
+.footer_media {
+    position: absolute;
+    box-sizing: border-box;
+    width: 80%;
+}
+
+.parallelogram_1_left {
+    position: absolute;
+    left: 1%;
+    top: -25px;
+    width: 85px;
+    height: 55px;
+    background: #db291b;
+    -webkit-transform: skew(-30deg);
+    -moz-transform: skew(-30deg);
+    -o-transform: skew(-30deg);
+    transform: skew(-30deg);
+}
+
+.parallelogram_1_left img {
+    position: absolute;
+    width: 35px;
+    left: 27%;
+    top: 17%;
+}
+
+.parallelogram_2_left {
+    left: 18%;
+}
+
+.parallelogram_3_left {
+    left: 35%;
+}
+
+.footer_center {
+    padding: 10px 20px;
+    position: absolute;
+    left: 50%;
+    width: 155px;
+    height: 55px;
+    text-align: center;
+    background-color: ghostwhite;
+}
+
+.footer_center p {
+    line-height: 15px;
+    margin: 0;
+}
+
+.parallelogram_4_right img {
+    position: absolute;
+    width: 35px;
+    left: 27%;
+    top: 17%;
+}
+
+.parallelogram_4_right {
+    position: absolute;
+    right: 15%;
+    top: -25px;
+    width: 85px;
+    height: 55px;
+    background: #db291b;
+    -webkit-transform: skew(-30deg);
+    -moz-transform: skew(-30deg);
+    -o-transform: skew(-30deg);
+    transform: skew(-30deg);
+}
+
+.parallelogram_5_right {
+    right: -3%;
+}
+
+.parallelogram_6_right {
+    right: -20%;
+}
